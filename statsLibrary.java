@@ -62,13 +62,10 @@ public class statsLibrary {
             deviation[i] = singleDeviation;
         }
         //squares each element in array deviation
+        double sqsum = 0;
         for (int i = 0; i < deviation.length; i++) {
             double singleSquared = deviation[i]*deviation[i];
             deviation[i] = singleSquared;
-        }
-        //adds up each squared element in deviation
-        double sqsum = 0;
-        for (int i = 0; i < deviation.length; i++) {
             sqsum = sqsum + deviation[i];
         }
         //finds variance and square roots it
